@@ -16,6 +16,8 @@ def full_name_dict(first: str, last: str) -> dict:
     """Returns dictionary with first_name, last_name name"""
     result = {'first_name': first.title(), 'last_name': last.title()}
     return result
+
+
 # 2 + 3 = 5
 # (a + b)^2 = a*a + 2*a*b + b*b
 
@@ -48,8 +50,9 @@ def find_num(num_list, number):
 # nums = [5, 55, 76, 1, -9, 0, 1, 456]
 # find_num(nums, 1)
 # find_num([45, 0, 'hello'], 7)
-# passing arbitrary number of arguments
 
+
+# passing arbitrary number of arguments
 def desc_pizza(*toppings):
     print("We have only cheese pizza with following toppings: ")
     print(*toppings)
@@ -57,4 +60,3 @@ def desc_pizza(*toppings):
 # desc_pizza('chicken')
 # desc_pizza('chicken', 'peperoni', 'bbq chicken')
 # print('hello', 45, ['john', 'doe'], 'world')
-
